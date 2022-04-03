@@ -1,0 +1,35 @@
+table, td {
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+tr:nth-child(odd) td:nth-child(even), tr:nth-child(even) td:nth-child(odd) {
+    width: 50px;
+    height: 50px;
+    background: #F05712;
+    border: 3px solid #2CD64D;
+    margin: 30px;
+}
+
+tr:nth-child(odd) td:nth-child(odd), tr:nth-child(even) td:nth-child(even) {
+    width: 50px;
+    height: 50px;
+    background: #2CD64D;
+    border: 3px solid #F05712;
+    margin: 30px;
+}
+
+tr:nth-child(odd) td:nth-child(even) div, tr:nth-child(even) td:nth-child(odd) div {
+    width: 20px;
+    height: 20px;
+    background: #2CD64D;
+    /* margin: 10px;  */
+    margin: auto;
+}
+
+tr:nth-child(odd) td:nth-child(odd) div, tr:nth-child(even) td:nth-child(even) div {
+    width: 20px;
+    height: 20px;
+    background: #F05712;
+    margin: auto;
+}
